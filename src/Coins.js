@@ -6,7 +6,7 @@ const Coins = (Data) => {
     <div className='Container'>
         <div className='Row'>
             <div className='Coin'>
-                <img className='CoinImg' src={Data.element.image}/>
+                <img className='CoinImg' src={Data.element.image} alt={Data.element.name}/>
                 <h3>{Data.element.name}</h3>
                 <p>{Data.element.symbol}</p> 
             </div>
