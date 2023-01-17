@@ -1,0 +1,98 @@
+.Container{
+    display: flex;
+    justify-content: center;
+}
+
+.Row{
+    display: flex;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+
+.Coin{
+    display: flex;
+    align-items: center;
+    min-width: 320px;
+    height: 75px;
+}
+
+.CoinImg{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.Coin h3{
+    width: 180px;
+}
+
+.Coin p{
+    text-transform: uppercase;
+}
+
+.CoinData{
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.price{
+    width: 130px;
+}
+
+.volume{
+    width: 120px;
+}
+
+.MarketCap{
+    width: 160px;
+}
+
+.red{
+    width: 80px;
+    color: red;
+}
+
+.green{
+    width: 80px;
+    color: green;
+}
+
+@media (max-width:1024px){
+    .MarketCap{
+        display: none;
+    }
+    .Coin h3{
+        width: 150px;
+    }
+    .Coin{
+        min-width: 260px;
+    }
+}
+
+@media (max-width:600px){
+    .volume{
+        display: none;
+    }
+    .Coin{
+        min-width: 100px;
+    }
+    .Coin p{
+        display: none;
+    }
+    .CoinData{
+        width: unset;
+    }
+    .Coin h3{
+        width: 120px;
+    }
+    .price{
+        width: 100px;
+    }
+}
+
+@media (max-width:360px){
+    .hrChange{
+        display: none;
+    }
+}
