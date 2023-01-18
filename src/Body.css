@@ -37,6 +37,7 @@
     height: 100%;
     outline: none;
     border: none;
+    background-color: inherit;
 }
 
 @media (max-width:1024px) {
